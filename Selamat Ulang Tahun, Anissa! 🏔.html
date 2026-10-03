@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#BFE3F2">
+<title>Selamat Ulang Tahun, Anissa! 🏔️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF5E4; --ink:#1F3B2D; --soft:#4F6B5A; --card:#FFFFFF; --line:#C9DDB5;
+  --pine:#2F6B47; --sun:#FF7A3D; --tape:#FF4F8B; --sky:#BFE3F2; --mud:#7A5236;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#13241A;--ink:#EAF4E0;--soft:#A9C2B0;--card:#1D3527;--line:#2F4F3B;--sky:#1E4152;--pine:#6FCB92}
+}
+:root[data-theme="dark"]{--bg:#13241A;--ink:#EAF4E0;--soft:#A9C2B0;--card:#1D3527;--line:#2F4F3B;--sky:#1E4152;--pine:#6FCB92}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;-webkit-tap-highlight-color:transparent;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Fredoka','Nunito',system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* hero */
+.hero{display:flex;flex-direction:column;min-height:min(100svh,780px);background:linear-gradient(var(--sky),var(--bg) 92%);padding:36px 0 0;text-align:center;position:relative;overflow:hidden}
+.hero>.wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.bib{display:inline-block;background:#fff;color:#1F3B2D;border:3px solid #1F3B2D;border-radius:14px;padding:14px 26px 12px;transform:rotate(-3deg);box-shadow:0 6px 0 var(--sun);position:relative}
+.bib::before,.bib::after{content:"";position:absolute;top:8px;width:9px;height:9px;border-radius:50%;background:#1F3B2D}
+.bib::before{left:10px}.bib::after{right:10px}
+.bib small{display:block;font-weight:800;font-size:.85rem;letter-spacing:.04em}
+.bib b{display:block;font-family:'Fredoka';font-size:clamp(3rem,15vw,5.2rem);line-height:1;color:var(--sun)}
+.hero h1{font-size:clamp(2rem,8vw,3.4rem);margin:28px 0 8px}
+.hero p{max-width:30ch;margin:0 auto 20px;color:var(--soft);font-size:1.1rem}
+.btn{font-family:'Fredoka';font-weight:600;font-size:1.1rem;border:0;border-radius:999px;padding:12px 26px;background:var(--sun);color:#fff;cursor:pointer;min-height:48px;touch-action:manipulation;box-shadow:0 4px 0 #C4531F;transition:transform .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #C4531F}
+.btn:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+.rwrap{position:relative;margin-top:auto;line-height:0}
+.ridge{display:block;width:100%;height:auto;overflow:visible}
+
+/* checkpoints */
+section{padding:56px 0 8px}
+h2{font-size:clamp(1.7rem,6vw,2.3rem);margin-bottom:6px}
+.sub{color:var(--soft);margin:0 0 28px}
+.trail{--pl:34px;--fl:34px;position:relative;margin-left:14px;padding-left:var(--pl);border-left:4px dashed var(--mud)}
+.cp{position:relative;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 20px;margin-bottom:26px}
+.cp:nth-child(even){transform:rotate(.6deg)}.cp:nth-child(odd){transform:rotate(-.6deg)}
+.flag{position:absolute;left:calc(-1 * (var(--pl) + 2px + var(--fl) / 2));top:16px;width:var(--fl);height:var(--fl);border-radius:50% 50% 50% 4px;background:var(--tape);display:grid;place-items:center;font-size:1rem;transform:rotate(-45deg)}
+.flag span{transform:rotate(45deg)}
+.cp h3{font-size:1.25rem;color:var(--pine);margin-bottom:6px}
+.cp p{margin:0}
+.km{display:inline-block;font-weight:800;font-size:.8rem;background:var(--sun);color:#fff;border-radius:8px;padding:1px 9px;margin-bottom:8px}
+
+/* doa */
+.doa{background:var(--pine);color:#fff;border-radius:28px;padding:30px 24px;margin-top:20px}
+.doa h2{color:#fff}
+.doa .sub{color:#D9EEDF}
+.doa ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.doa li{background:rgba(255,255,255,.12);border-radius:16px;padding:14px 16px 14px 48px;position:relative}
+.doa li::before{content:"🌲";position:absolute;left:14px;top:12px;font-size:1.4rem}
+.amin{text-align:center;font-family:'Fredoka';font-size:1.6rem;margin:22px 0 0}
+
+/* closing */
+.fin{text-align:center;padding:56px 0 70px}
+.fin h2{margin-bottom:10px}
+.count{font-family:'Fredoka';font-size:1.1rem;color:var(--soft);margin-top:14px;min-height:1.6em}
+.sign{margin-top:30px;font-weight:800;color:var(--mud)}
+.pop{position:fixed;font-size:1.8rem;pointer-events:none;animation:pop 1.4s ease-out forwards;z-index:9}
+@keyframes pop{to{transform:translate(var(--dx),-180px) rotate(var(--r));opacity:0}}
+@media (max-width:480px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .hero{padding-top:20px}
+  .bib{padding:12px 22px 10px}
+  .hero p{font-size:1.05rem}
+  section{padding-top:44px}
+  .trail{--pl:26px;--fl:30px;margin-left:12px}
+  .cp{padding:15px 15px;margin-bottom:22px}
+  .cp:nth-child(even),.cp:nth-child(odd){transform:none}
+  .cp h3{font-size:1.15rem}
+  .doa{padding:26px 16px;border-radius:24px}
+  .doa li{padding:13px 14px 13px 44px}
+  .doa li::before{left:12px}
+  .btn{width:100%;max-width:320px}
+  .fin{padding:44px 0 56px}
+}
+@media (prefers-reduced-motion:reduce){.pop{animation-duration:.01s}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bib"><small>FINISHER — TRAIL RUN</small><b>HBD</b></div>
+    <h1>Selamat Ulang Tahun, Anissa! 🎉</h1>
+    <p>Hari ini garis finish-nya cuma satu: kue. Ayo lari ke sana!</p>
+    <button class="btn" id="go">Mulai lari 👟</button>
+  </div>
+  <div class="rwrap">
+    <svg class="ridge" viewBox="0 0 700 190" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,175 L90,95 L150,130 L260,40 L340,110 L420,70 L520,150 L600,100 L700,160 L700,190 L0,190Z" fill="var(--pine)"/>
+      <path d="M0,185 L110,130 L200,160 L330,100 L450,150 L580,120 L700,175 L700,190 L0,190Z" fill="var(--mud)" opacity=".55"/>
+      <path d="M260,40 L240,62 L255,58 L262,66 L272,56 L284,62Z" fill="#fff"/>
+      <g id="runner"><text font-size="34" text-anchor="middle" y="4">🏃‍♀️</text>
+        <animateMotion id="runAnim" dur="9s" begin="0.5s" fill="freeze" rotate="0" path="M20,172 L90,95 L150,130 L260,40 L340,110 L420,70 L520,150 L600,100 L680,158"/></g>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="rute">
+    <h2>Briefing rute: tahun baru Anissa</h2>
+    <p class="sub">Empat pos yang harus dilewati. Aman kok, nggak ada cut-off time.</p>
+    <div class="trail">
+      <div class="cp"><div class="flag"><span>🚩</span></div><span class="km">KM 0 · Start</span>
+        <h3>Selamat, kamu nambah umur!</h3>
+        <p>Semoga umurnya nambah, tapi pace-mu tetap kenceng. Yang nambah cuma angka, bukan lambatnya.</p></div>
+      <div class="cp"><div class="flag"><span>⛰️</span></div><span class="km">KM 12 · Tanjakan</span>
+        <h3>Tanjakan itu sementara</h3>
+        <p>Hidup kayak trail: tanjakannya bikin ngos-ngosan, tapi pemandangan di atasnya selalu worth it. Semoga tahun ini lebih banyak view daripada nanjak.</p></div>
+      <div class="cp"><div class="flag"><span>🍌</span></div><span class="km">KM 25 · Aid station</span>
+        <h3>Isi tenaga dulu</h3>
+        <p>Hari ini boleh makan pisang, gel, dan kue sebanyak-banyaknya tanpa hitung kalori. Kalau ada yang nanya, bilang aja carbo loading.</p></div>
+      <div class="cp"><div class="flag"><span>🏁</span></div><span class="km">KM 42 · Finish</span>
+        <h3>Kamu keren banget, serius</h3>
+        <p>Kamu tetap lari waktu hujan, becek, dan sepatu penuh lumpur, sambil masih bisa senyum buat foto. Semoga semua targetmu tahun ini finish dengan manis (dan tanpa kram).</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="doa">
+      <h2>Doa untuk Anissa 🤲</h2>
+      <p class="sub">Dibaca pelan-pelan, sambil atur napas.</p>
+      <ul>
+        <li>Semoga Allah memberi umur yang panjang, sehat, dan penuh berkah, supaya kamu bisa terus menikmati setiap jalur.</li>
+        <li>Semoga langkahmu selalu dijaga: kaki kuat, lutut aman, dan nggak ada cedera yang mampir.</li>
+        <li>Semoga rezekimu lancar, hatimu tenang, dan dikelilingi orang-orang yang menyayangimu.</li>
+        <li>Semoga setiap mimpi dan target lari-mu dimudahkan, dari 5K sampai ultra yang kamu impikan.</li>
+        <li>Semoga di setiap persimpangan hidup, kamu diberi petunjuk jalan yang benar dan nggak pernah nyasar.</li>
+      </ul>
+      <p class="amin">Aamiin ya Rabbal 'alamin 🌿</p>
+    </div>
+  </section>
+
+  <section class="fin">
+    <h2>Tos dulu dong! 🙌</h2>
+    <p class="sub">Tekan tombolnya buat kirim semangat.</p>
+    <button class="btn" id="tos">Kasih semangat! 🔥</button>
+    <div class="count" id="count" aria-live="polite"></div>
+    <p class="sign">Dengan sayang, dari temanmu 💚<br><span style="font-weight:600;color:var(--soft)">Sampai ketemu di start line berikutnya!</span></p>
+  </section>
+</main>
+
+<script>
+(function(){
+  var go=document.getElementById('go'),tos=document.getElementById('tos'),c=document.getElementById('count'),n=0;
+  var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm){var a=document.getElementById('runAnim');if(a)a.remove();document.getElementById('runner').setAttribute('transform','translate(680,158)');}
+  go.addEventListener('click',function(){document.getElementById('rute').scrollIntoView();});
+  var icons=['👟','🌲','🍌','⛰️','🎉','💚','🏃‍♀️','🎂'];
+  var lines=['Yeay!','Semangat terus!','Pace aman!','Gas terus!','Finish strong!','Kamu jagoan!','Tos! 🙌'];
+  tos.addEventListener('click',function(e){
+    n++;
+    c.textContent=lines[n%lines.length]+' (' + n + 'x semangat terkirim)';
+    var r=tos.getBoundingClientRect();
+    for(var i=0;i<8;i++){
+      var s=document.createElement('span');
+      s.className='pop';
+      s.textContent=icons[Math.floor(Math.random()*icons.length)];
+      s.style.left=Math.min(Math.max(r.left+r.width/2,40),window.innerWidth-70)+'px';
+      s.style.top=(r.top)+'px';
+      s.style.setProperty('--dx',(Math.random()*200-100)+'px');
+      s.style.setProperty('--r',(Math.random()*120-60)+'deg');
+      document.body.appendChild(s);
+      setTimeout(function(el){return function(){el.remove();}}(s),1500);
+    }
+  });
+})();
+</script>
+</body>
+</html>
